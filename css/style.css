@@ -19,7 +19,9 @@ a {
   color: #1bb1dc;
   transition: 0.5s;
 }
-
+#particles-js{
+  height: 100%;
+}
 a:hover,
 a:active,
 a:focus {
