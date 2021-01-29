@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vibhav Alumni</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/alumni.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="containers">
+        <div class="logo">
+          <h1 class="text-success"><a href="#intro" class="scrollto"><span>VI</span><span
+                class="ayush">BH</span><span>AV</span></a></h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Team</a></li>
+            <li class="active"><a href="#">Alumni</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+
+          </ul>
+        </nav><!-- .main-nav -->
+
+      </div>
+    </header>
+
+
+
+    <h1 class="title">Hover over the cards</h1>
+
+    <div id="app" class="container">
+      <!-- <cards data-image="img/yashsir.jpg">
+        <h1 slot="header">YASH SIR</h1>
+        <p slot="content">Club Coordinator</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+      <cards data-image="img/yashsir.jpg">
+        <h1 slot="header">YASH SIR</h1>
+        <p slot="content">Club Coordinator</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+      <cards data-image="img/yashsir.jpg">
+        <h1 slot="header">YASH SIR</h1>
+        <p slot="content">Club Coordinator</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+      <cards data-image="img/yashsir.jpg">
+        <h1 slot="header">YASH SIR</h1>
+        <p slot="content">Club Coordinator</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards> -->
+      <cards data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&amp;auto=compress,format&amp;fit=crop&amp;w=1199&amp;h=798&amp;q=80&amp;cs=tinysrgb&amp;crop=">
+        <h1 slot="header">ALUMNI</h1>
+        <p slot="content">current position</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+      <cards data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+        <h1 slot="header">ALUMNI</h1>
+        <p slot="content">current position</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+      <cards data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+        <h1 slot="header">ALUMNI</h1>
+        <p slot="content">current position</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+      <cards data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+        <h1 slot="header">ALUMNI</h1>
+        <p slot="content">current position</p>
+        <p slot="content"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </p>
+      </cards>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    <script type="text/javascript">
+    Vue.config.devtools = true;
+    Vue.component('cards', {
+    template: `
+      <div class="cards-wrap"
+        @mousemove="handleMouseMove"
+        @mouseenter="handleMouseEnter"
+        @mouseleave="handleMouseLeave"
+        ref="cards">
+        <div class="cards"
+          :style="cardStyle">
+          <div class="cards-bg" :style="[cardBgTransform, cardBgImage]"></div>
+          <div class="cards-info">
+            <slot name="header"></slot>
+            <slot name="content"></slot>
+          </div>
+        </div>
+      </div>`,
+    mounted() {
+      this.width = this.$refs.cards.offsetWidth;
+      this.height = this.$refs.cards.offsetHeight;
+    },
+    props: ['dataImage'],
+    data: () => ({
+      width: 0,
+      height: 0,
+      mouseX: 0,
+      mouseY: 0,
+      mouseLeaveDelay: null }),
+
+    computed: {
+      mousePX() {
+        return this.mouseX / this.width;
+      },
+      mousePY() {
+        return this.mouseY / this.height;
+      },
+      cardStyle() {
+        const rX = this.mousePX * 30;
+        const rY = this.mousePY * -30;
+        return {
+          transform: `rotateY(${rX}deg) rotateX(${rY}deg)` };
+
+      },
+      cardBgTransform() {
+        const tX = this.mousePX * -40;
+        const tY = this.mousePY * -40;
+        return {
+          transform: `translateX(${tX}px) translateY(${tY}px)` };
+
+      },
+      cardBgImage() {
+        return {
+          backgroundImage: `url(${this.dataImage})` };
+
+      } },
+
+    methods: {
+      handleMouseMove(e) {
+        this.mouseX = e.pageX - this.$refs.cards.offsetLeft - this.width / 2;
+        this.mouseY = e.pageY - this.$refs.cards.offsetTop - this.height / 2;
+      },
+      handleMouseEnter() {
+        clearTimeout(this.mouseLeaveDelay);
+      },
+      handleMouseLeave() {
+        this.mouseLeaveDelay = setTimeout(() => {
+          this.mouseX = 0;
+          this.mouseY = 0;
+        }, 1000);
+      } } });
+
+
+
+    const app = new Vue({
+    el: '#app' });
+    </script>
+  </body>
+</html>
